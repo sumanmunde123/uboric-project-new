@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summery Page</title>
+    <!-- <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <!-- <script src='https://kit.fontawesome.com/bdfe5144d7.js' crossorigin='anonymous'></script> --> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="summery.css">
+    <style>
+    .box{
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 500px;
+    width: 48%;
+    margin: auto;
+    vertical-align: top;
+}
+.box1{
+    height: 100px;
+    margin-left: 10%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 8px;
+}
+.cod{
+    /* height: 5%; */
+    margin-bottom: 10px;
+    text-align: center;
+    /* padding-top: 30px; */
+    font-size: 40px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+hr{
+    margin: 0;
+    padding: 0;
+}
+.prod{
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 7%;
+    margin-left: 1%;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    
+}
+.cod1{
+    height: 70px;
+    /* margin-bottom: 10px; */
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    width: 100%;
+    background-color: wheat; 
+}
+img{
+    height:120px ;
+    width: 140px;
+}
+span{
+    color: gray;
+}
+.first{
+    color: black;
+    font-size: 25px;
+}
+#supplier{
+    color: gray;
+    padding-left: 20px;
+}
+.box2{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    height: 370px;
+    padding-left:30px ;
+    width: 300px;
+    margin-left: 50px;
+}
+p{
+    color: grey;
+}
+.leftA{
+    padding-left: 50px;
+    text-align: left;
+    color: #b57e66;
+}
+.ls{
+    padding-left: 74px;
+}
+.ld{
+    padding-left: 10px;
+}
+.lm{
+    padding-left: 26px;
+}
+button{
+    background-color: rgb(17, 70, 4);
+    border: none;
+    height: 40px;
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius:5px ;
+    color: white;
+}
+#supplier{
+    font-size: 20px;
+}
+#pro_img{
+    margin-left: -250px;
+}
+
+/* check bar start */
+.fa-check{
+    color:white;
+    background-color: rgb(28, 0, 128);
+    border-radius: 20px;
+    width:99%;
+    height:99%;
+    font-size:20px;
+    
+  }
+  .fa-times{
+    color:white;
+
+    border-radius: 20px;
+    width:20px;
+    height:20px;
+    font-size:20px;
+    
+  }
+  .p{
+    display:flex;
+    margin-left: 33%;
+    margin-top: 100px;
+  }
+  
+  .c1{
+    
+    border:blue;
+    height:20px;
+    width:20px;
+    text-align: center;
+    border-radius:50px;
+  }
+  .c{
+    
+    border:1px solid green;
+    height:20px;
+    width:20px;
+    border-radius:50px;
+  }
+  .l{
+    margin-top:11px;
+    background-color:rgb(7, 1, 128);
+    border:1px solid rgb(7, 1, 128);
+    height:0px;
+    width:150px;
+  }
+  .l1{
+    margin-top:11px;
+    background-color:rgb(7, 1, 128);
+    border:1px solid rgb(7, 1, 128);
+    height:0px;
+    width:150px;
+  }
+
+  .p8{
+    display:flex;
+    margin-left: 32%;
+    margin-top: 5px;
+  }
+  .l8{
+    margin-top:11px;
+    background-color:white;
+    border:1px solid white;
+    height:0px;
+    width:150px;
+  }
+  .c8{
+    
+    border:1px solid white;
+    height:20px;
+    width:20px;
+    border-radius:50px;
+  }
+  #nav{
+      background-color: black;
+      width: 100%;
+      height: 70px;
+  }
+  .butt{
+      width: 10%;
+      height:95%;
+      background-color: black;
+  }      
+  #search_nav{
+      width: 30%;
+      height: 80%;
+      border-radius: 20px;
+     
+  }
+  #nav_sele{
+      width: 10%;
+      height: 100%;
+      background-color: black;
+      color: white  ;
+      font-size: 26px;
+      border: 2px solid black;
+  }
+  #nav2{
+           width: 100%;
+      height: 10%;
+      display: flex;
+      background-color: gray;
+      margin-top: 5px;
+  }
+  #nav2_select{
+      background-color: gray;
+  }
+  .nav2_but1{
+      background-color: gray;
+  }
+ #footer{
+     
+     display: flex;
+     background-color: rgb(224, 221, 221);
+     width: 100%;
+   margin-top: 200px;
+ }
+ .foot{
+    
+    
+     padding:50px 100px;
+ }
+ .foot_h1{
+     font-size: 16px;
+ }
+    </style>
+</head>
+<body>
+
+   <div id="containerr"></div>
+     <!-- check bar star-->
+     <div class = "p">
+        <div class = "c1">
+          <i class="fa fa-check"></i>
+        </div>
+        <div class = "l">
+        </div>
+        <div class = "c2">
+            <i class="fa fa-check"></i>
+        </div>
+        <div class = "l1">
+        </div>
+        <div class = "c">
+            <i class="fa fa-times"></i>
+        </div>
+      </div>
+
+      <div class = "p8">
+        <div class = "c8">
+          <P>Address</P>
+        </div>
+        <div class = "l8">
+        </div>
+        <div class = "c8">
+           <p>Payment</p>
+        </div>
+        <div class = "l8">
+        </div>
+        <div class = "c8">
+            <p>Order Placed</p>
+        </div>
+      </div>
+      
+<!-- check bar end -->
+    <div class="container">
+        <h1 style="margin-left: 10%; padding-top: 40px;">Product Details:</h1>
+        <div class="box box1">
+            <div class="cod">
+                <img class="prod" id="pro_img" src="https:via.placeholder.com/80x100" alt="">
+                <p class="prod" > <span id="prod_name">Product_name</span> 
+                   <br><span>size:</span> <span id="product_size">6</span> <br>
+                  <span>Qty: </span><span id="product_qty">1</span> <br> 
+                  <span>₹ </span><span class="product_price" id="product_price">180</span>
+                </p>
+             <hr>
+               
+            </div>
+            <h1>Payment Method:</h1>
+            <div class="cod1">
+                <i class="fas fa-truck"> Cash on delivery</i>
+                <input type="radio" checked>
+            </div>
+        </div>
+        <div class="box box2">
+            <h1>Price Details</h1>
+            <p>
+                Product Charge <span>₹</span> <span class="product_price leftA" id="product_price1">180</span>
+            </p>
+            <p>
+                Delivery Charge <span class="leftA">₹80</span>
+            </p>
+            <p>
+                COD Charge <span class="leftA ls">+₹0</span>
+            </p>
+            <p>
+                1st Order Discount <span class="leftA lm">₹ 100</span>
+            </p>
+            <hr>
+            <h2>
+                Order Total <span>₹</span> <span id="total_price1" class="leftA ld">206</span>
+            </h2>
+            <p style="font-size:13px;">Clicking on ‘Continue’ will not deduct any money</p>
+            <a href="confirmation.html"><button onclick="con()">Place Order</button></a>
+        </div>
+    </div>
+
+
+
+
+    
+    
+</body>
+
+
+
+
+
+
+
+
+
+</html>
+<script type="module">
+    import navbar from "./components/navbar.js"
+    let containerr =document.getElementById("containerr")
+    containerr.innerHTML = navbar();
+</script>
+<script>
+ data = JSON.parse(localStorage.getItem("cartItem"));
+//console.log(data)
+var pro_img1 = document.querySelector("#pro_img");
+pro_img1.setAttribute("src",data.image_url)
+//console.log(data.price,data.image_url,data.product_n)
+
+var pro_name = document.querySelector("#prod_name");
+pro_name.textContent=data.product_n;
+
+var pro_price = document.querySelector("#product_price");
+pro_price.textContent=data.price;
+
+var pro_price1 = document.querySelector("#product_price1");
+pro_price1.textContent=data.price;
+
+// var left_price = document.querySelector("#t_price");
+// left_price.textContent=data.price;
+
+var total = (80+(+data.price))-100;
+var t_price = document.querySelector("#total_price1");
+t_price.textContent=total;
+function con(){
+    confirm("Do you want to place your order ?")
+}
+
+
+var date =new Date()
+console.log(date)
+var mydate=date.toLocaleDateString()
+mydate=mydate.split("/").map(Number)
+console.log(typeof(mydate[0]))
+day =mydate[0]+5;
+
+document.getElementById("delivery_time").textContent=`${day+"/"+mydate[1]+"/"+mydate[2]}`;
+//alert("Do you want to place your order")
+</script>

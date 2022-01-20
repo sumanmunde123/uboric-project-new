@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Page</title>
+    <link rel="stylesheet" href="confirmation.css">
+    <style>
+        body{
+            background-color: rgb(230, 196, 230);
+        }
+
+       .container{
+    padding-top: 50px;
+    height: 300px;
+    width: 430px;
+    margin: auto;
+    text-align: center;
+}
+h1{
+    padding-left: 10px;
+    color: rgb(9, 71, 71);
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+button{
+    background-color: purple ;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    font-size: 14px;
+    font-family:monospace;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 150px;
+}
+button:hover{
+    height: 45px;
+    width: 155px;
+    border:3px solid red;
+}
+button:focus{
+    background-color: red;
+}
+.oid{
+    font-size: 20px;
+    color: gray;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your order successfully placed</h1>
+        <img src="https://www.alpha-cat.org/wp-content/uploads/2020/03/payment_successful.gif" alt="">
+        <h4>Transaction ID: masaischool123456</h4>
+        <button>Track your order</button>
+        <a href="index.html"><button>Continue shopping</button></a>
+
+    </div>
+</body>
+</html>
+<script>
+  var date =new Date()
+console.log(date)
+var mydate=date.toLocaleDateString()
+mydate=mydate.split("/").map(Number)
+console.log(typeof(mydate[0]))
+day =mydate[0]+5;
+
+document.querySelector("button").addEventListener("click",function (){
+    alert(`Your order will be delivered by ${day+"/"+mydate[1]+"/"+mydate[2]}`)
+})
+</script>

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uboric.com</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<style>
+    body{
+        overflow-x: hidden;
+    }
+
+
+
+
+
+.numbertext{
+        /* position: relative; */
+        /* top: 0; */
+        padding: 8px 12px;
+        color: #f2f2f2;
+        font-size: 16px;
+        z-index: -1;
+
+
+    }
+    .text{
+       
+        position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+    }
+    .dot{
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .dots-container{
+        text-align: center;
+        margin-top: 30px;
+
+    }
+    .dots{
+        height: 15px;
+        width: 15px;
+        display: inline-block;
+        background-color: black;
+        border-radius: 50%;
+        transition: background-color 0.6s ease;
+
+    }
+    .fade{
+        -webkit-animation-name: fade;
+        -webkit-animation-duration:1.5s ;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    @keyframes fade{
+        from {opacity: .4;}
+        to {opacity: 1;}
+    }
+
+
+
+
+    #kitchen{
+        width: 100%;
+        height: 90px;
+        /* border: 1px solid black; */
+        vertical-align: top;
+
+
+    }
+    #kitchentool{
+        width: 120px;
+        height: 86%;
+        /* border: 1px solid rebeccapurple; */
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 27%;
+        margin-top: 2px;
+        
+    }
+    #kitchentool1{
+        width: 120px;
+        height: 86%;
+        /* border: 1px solid rebeccapurple; */
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 5%;
+        margin-top: 2px;
+        
+    }
+    .spoon{
+        width: 100%;
+        height: 100%;
+    }
+
+    #box{
+        width: 100%;
+        height: 430px;
+        /* border: rebeccapurple solid 1px; */
+        vertical-align: top;
+
+    }
+    .lighter{
+        display: inline-block;
+        width: 30%;
+        height: 96%;
+        /* border:  1px solid black; */
+        vertical-align: top;
+        margin-left: 34px;
+        border-radius: 10px;
+
+       
+
+    }
+    .lighter:hover{
+        width: 32%; 
+        height: 100%;
+    }
+    .light{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    }
+    .light:hover{
+          width: 103%;  
+         height: 103%; 
+    }
+    #box2{
+        width: 100%;
+        height: 400px;
+        vertical-align: top;
+        margin-top: 70px;
+        /* border:  1px solid red; */
+    }
+    .box3{
+        width: 98%;
+        height: 400px;
+        /* border:  1px solid turquoise; */
+        vertical-align: top;
+        margin-top: 15px;
+        margin-left: 10px;
+
+    }
+    .box3:hover{
+        width: 100%;
+        height: 410px;
+    }
+    .sd{
+        width: 45%;
+        margin-left: 3%;
+        height: 98%;
+        /* border:  1px solid black; */
+        display: inline-block;
+        vertical-align: top;
+    }
+    .sd:hover{
+        width: 47%;
+        height: 102%;
+    }
+   .imgsd:hover{
+       width: 47%;
+       height: 102%;
+   }
+   #imgsd2:hover{
+       width: 100%;
+       height: 100%;
+   }
+  #product{
+      width: 100%;
+      height: 500px;
+      /* border: black solid 1px; */
+      vertical-align: top;
+      margin-top: 20px;
+  }
+  .imgpro{
+      width: 16%;
+      height: 80%;
+      /* border: 1px solid red; */
+      display: inline-flex;
+      margin-left: 20px;
+      margin-top: 20px;
+      vertical-align: top;
+      border-radius: 10px;
+  }
+  #imgpro2{
+      width: 16%;
+      height: 90%;
+      /* border: 1px solid red; */
+      display: inline-flex;
+      margin-left: 60px;
+      margin-top: 20px;
+      vertical-align: top;
+      border-radius: 10px;
+  }
+  .imgpro:hover{
+      width: 18%;
+      height: 85%;
+
+  }
+ #imgpro2:hover{
+    width: 18%;
+      height: 95%;
+
+   
+ }
+ .imggg:hover{
+     width: 100%;
+     height: 100%;
+ }
+ #boxx4{
+     width: 80%;
+     height: 800px;
+     /* border: red solid 1px; */
+     background-color: #faf8f8;
+     vertical-align: top;
+     margin-top: 40px;
+     margin-left: 13%;
+ }
+
+
+ #extra{
+     width: 98%;
+     height: 45px;
+     /* border: tomato solid 1px; */
+     vertical-align: top;
+     background-color: transparent;
+     margin-left: 10px;
+     margin-top: 10px;
+     display: inline-block;
+ }
+ .mark{
+     width: 20px;
+     height: 20px;
+     /* border: 1px solid teal; */
+     margin-left: 3%;
+     margin-top: 20px;
+     color: rgb(48, 107, 158);
+     font-size: larger;
+     display: inline-block;
+     vertical-align: top;
+ }
+ 
+ #containerr{
+    z-index: -1;
+ }
+ 
+
+</style>
+<body>
+    <div id="containerr"></div>
+
+
+
+    
+    <div class="slideshow-container">
+        <div class="myslides fade">
+            <div class="numbertext">
+                
+            </div>
+            <img src="myimages/clothing.webp" alt="background">
+           <a href="prod.html"> <button  class="text">SHOP NOW</button></a>
+        </div>  
+    </div>
+
+    
+    <div class="slideshow-container">
+        <div class="myslides fade">
+            <div class="numbertext">
+                
+            </div>
+            <img src="myimages/Headphone.webp" alt="background">
+            <a href="prod.html"> <button  class="text">SHOP NOW</button></a>
+        </div>  
+    </div>
+
+
+    
+    <div class="slideshow-container">
+        <div class="myslides fade">
+            <div class="numbertext">
+                
+            </div>
+            <img src="myimages/menfashion.webp" alt="background">
+            <a href="prod.html"> <button  class="text">SHOP NOW</button></a>
+        </div>
+        
+        <div class="dots-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+
+    <div id="kitchen">
+        <div id="kitchentool">
+            <img class="spoon" src="myimages/spoon.webp">
+        </div>
+        <h1 style="display: inline-block; margin-left: 6%; color: rgb(30, 81, 108);">
+           KITCHEN WARE
+        </h1>
+        <div id="kitchentool1">
+            <img class="spoon" src="myimages/spoon.webp">
+        </div>
+
+
+    </div>
+
+<div id="box">
+  <div class="lighter">
+      <img class="light" src="myimages/kithchen-tools.webp" >
+  </div>
+  <div class="lighter">
+    <img class="light" src="myimages/Air-Tight.webp" >
+  </div>
+  <div class="lighter">
+    <img class="light" src="myimages/Gas-Lighter.webp" >
+  </div>
+</div>
+
+
+
+
+
+<div id="box2">
+    <img style="width: 100%; height: 100%; " src="myimages/Uboric-1.webp">
+</div>
+
+
+
+<div id="kitchen">
+    <div id="kitchentool">
+        <img class="spoon" src="myimages/trolly.webp">
+    </div>
+    <h1 style="display: inline-block; margin-left: 6%; color: rgb(30, 81, 108);">
+        OTHER CATEGORIES
+    </h1>
+    <div id="kitchentool1">
+        <img class="spoon" src="myimages/trolly.webp">
+    </div>
+
+
+</div>
+
+
+
+
+<div class="box3">
+    <div class="sd">
+        <img class="imgsd" style="width: 100%; height: 100%;" src="myimages/trimmer.webp">
+    </div>
+    <div class="sd">
+        <img class="imgsd" style="width: 100%; height: 100%;" src="myimages/basin.webp">
+    </div>
+</div>
+
+
+<div class="box3">
+    <img id="imgsd2" style="width: 96%; height: 98%; margin-left: 30px;" src="myimages/Headphone.webp">
+</div>
+
+
+
+<div class="box3">
+    <div class="sd">
+        <img class="imgsd" style="width: 100%; height: 100%;" src="myimages/shirts.webp">
+    </div>
+    <div class="sd">
+        <img class="imgsd" style="width: 100%; height: 100%;" src="myimages/painting.webp">
+    </div>
+</div>
+
+
+
+<div id="product">
+  <div class="imgpro">
+      <img class="imggg" style="border-radius: 5px; width: 98%; height: 98%; margin-left: 5px;" src="myimages/Socks.webp">
+  </div>
+  <div class="imgpro">
+    <img class="imggg" style="border-radius: 5px; width: 98%; height: 98%; margin-left: 5px;" src="myimages/Personal-Care.webp">
+  </div>
+  <div class="imgpro">
+    <img class="imggg" style="border-radius: 5px; width: 98%; height: 98%;" src="myimages/Braclate.webp">
+  </div>
+  <div class="imgpro">
+    <img class="imggg" style="border-radius: 5px; width: 98%; height: 98%;" src="myimages/Grocery.webp">
+  </div>
+  <div id="imgpro2">
+    <img class="imggg" style="border-radius: 5px; width: 98%; height: 98%;" src="myimages/Health-Care.webp">
+  </div>
+</div>
+
+
+
+<div id="kitchen">
+    <div id="kitchentool">
+        <img class="spoon" src="myimages/spices.webp">
+    </div>
+    <h1 style="display: inline-block; margin-left: 7%; color: rgb(30, 81, 108);">
+        SPICES
+    </h1>
+    <div id="kitchentool1">
+        <img class="spoon" src="myimages/spices.webp">
+    </div>
+
+
+
+
+    <div id="product">
+        <div class="imgpro">
+            <img class="imggg" style="border-radius: 5px; width: 98%; height: 98%; margin-left: 5px;" src="myimages/Spices-1.webp">
+        </div>
+        <div class="imgpro">
+          <img class="imggg" style="border-radius: 5px; width: 98%; height: 98%; margin-left: 5px;" src="myimages/Spices-2.webp">
+        </div>
+        <div class="imgpro">
+          <img class="imggg" style="border-radius: 5px; width: 98%; height: 98%;" src="myimages/Spices-3.webp">
+        </div>
+        <div class="imgpro">
+          <img class="imggg" style="border-radius: 5px; width: 98%; height: 98%;" src="myimages/Spices-4.webp">
+        </div>
+        <div id="imgpro2">
+          <img class="imggg" style="border-radius: 5px; width: 98%; height: 98%;" src="myimages/Spices-5.webp">
+        </div>
+      </div>
+
+
+
+      
+<div id="kitchen">
+    <div id="kitchentool">
+        <img class="spoon" src="myimages/shoes.webp">
+    </div>
+    <h1 style="display: inline-block; margin-left: 7%; color: rgb(30, 81, 108);">
+        FOOTWEAR
+    </h1>
+    <div id="kitchentool1">
+        <img class="spoon" src="myimages/shoes.webp">
+    </div>
+</div>
+
+
+
+<div class="box3">
+    <img id="imgsd2" style="width: 96%; height: 98%; margin-left: 30px;" src="myimages/menfashion.webp">
+</div>
+
+
+
+
+<div id="product">
+    <div class="imgpro">
+        <img class="imggg" style="border-radius: 5px; width: 98%; height: 98%; margin-left: 5px;" src="myimages/Foot-Wear-1.webp">
+        
+    </div>
+    <div class="imgpro">
+      <img class="imggg" style="border-radius: 5px; width: 98%; height: 98%; margin-left: 5px;" src="myimages/Foot-Wear-2.webp">
+    </div>
+    <div class="imgpro">
+      <img class="imggg" style="border-radius: 5px; width: 98%; height: 98%;" src="myimages/Foot-Wear-3.webp">
+    </div>
+    <div class="imgpro">
+      <img class="imggg" style="border-radius: 5px; width: 98%; height: 98%;" src="myimages/Foot-Wear-4.webp">
+    </div>
+    <div id="imgpro2">
+      <img class="imggg" style="border-radius: 5px; width: 98%; height: 98%;" src="myimages/Foot-Wear-5.webp">
+    </div>
+  </div>
+
+
+
+
+
+  <div id="boxx4">
+    <h1 style="color: #1e516c;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 5px; font-size: 40px; text-align: center;">The Ultimate Domestic Online Shopping Experience Platform in India</h1>
+
+    <p style="font-size: 24px;  letter-spacing: 3px; text-align: center;">Online shopping with Uboric is quick, convenient and trouble-free. You can shop for the desired product right from the comfort of your home and get them delivered straight to your doorstep. Uboric offers you the chance to choose top branded products sitting in the comfort of your homes and just clicking on your requirements to get it delivered at your doorstep. Your search for the latest trending variety of unique products ends right here. A wide range of international products from global brands are available at your fingertips. We provide you with a world-class online shopping experience, along with superior service, to suit all your specific requirements. Our products are very reasonably priced and are not easily available elsewhere. Our high-end technology-based systems, combined with a human approach, ensure that you have an amazing and blissful online shopping experience with us. Our emphasis on customer delight drives every activity we undertake to provide you an ultimate, hassle-free and pleasant shopping experience. Our diverse categories of products comprise of fashion & jewellery, mobiles and tablets, home and furniture, electronics, health care and supplements, sports and fitness, beauty and perfumes. We offer almost every variety of product that your heart desires. Just Go Ahead and Explore the magical world of online shopping with Uboric! 24×7 Customer Care: For all your queries and concerns regarding your shopping orders.</p>
+    <h1 style="color: #1e516c;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 5px; font-size: 30px; text-align: center; margin-top: 0px;">Benefits of shopping on Uboric :  </h1>
+  </div>
+
+
+
+  <div id="extra">
+    <div class="mark"><i aria-hidden="true" class="fas fa-check"></i></div>
+    <h2 style="display: inline-block; vertical-align: top;  margin-left: 10px; font-size: 21px; font-weight: 400; font-family: Lato, sans-serif;">User-Friendly</h2>
+
+
+    <div class="mark"><i aria-hidden="true" class="fas fa-check"></i></div>
+    <h2 style="display: inline-block; vertical-align: top;  margin-left: 10px; font-size: 21px; font-weight: 400; font-family: Lato, sans-serif;">Safe & Secure Shopping</h2>
+
+    <div class="mark"><i aria-hidden="true" class="fas fa-check"></i></div>
+    <h2 style="display: inline-block; vertical-align: top;  margin-left: 10px; font-size: 21px; font-weight: 400; font-family: Lato, sans-serif;">Check Out Closely</h2>
+
+    <div class="mark"><i aria-hidden="true" class="fas fa-check"></i></div>
+    <h2 style="display: inline-block; vertical-align: top;  margin-left: 10px; font-size: 21px; font-weight: 400; font-family: Lato, sans-serif;">Multiple Payment Options:</h2>
+
+    <div class="mark"><i aria-hidden="true" class="fas fa-check"></i></div>
+    <h2 style="display: inline-block; vertical-align: top;  margin-left: 10px; font-size: 21px; font-weight: 400; font-family: Lato, sans-serif;">Order History:</h2>
+  </div>
+
+
+
+   <div id="footer">
+    <h2 class="foot">What Our Customer Says</h2>
+    <div class="foot2">
+        <p>
+          Auspesious range of foot wares.Premium branded products. <br>Good survival delevery duration.Super high value of customers.  <br><br><br><br>
+          Tushar Pandey<br><br>--Customers
+        </p>
+     
+    </div>
+    <div class="foot2">
+        <p>I think one of the best app for shoes shopping. I am totally happy with it Thank you so much uboric. <br><br><br><br><br>harpal patel<br><br>--Customers</p>
+        
+    </div>
+    <div class="foot2">
+        <p>Very bif range of products  and the services  are very fast. i am ordered the footwear and they deleveres very quick.<br><br><br><br>Ishan Shah<br><br>--Customers</p>
+        
+    </div>
+
+    <button id="btnfoot">Add Your Reviews</button>
+  </div>
+
+
+
+  <div id="finalfoot">
+      <div id="gogleplay">
+          <img style="width: 100%; height: 95%;" src="myimages/google-play1.webp">
+      </div>
+      <div id="footnav">
+          <h3 class="fotnav">About Us</h3>
+          <h3 class="fotnav">Contact</h3>
+          <h3 class="fotnav">Shipping & Returns</h3>
+          <h3 class="fotnav">My Account</h3>
+          <h3 class="fotnav">Privacy Policy</h3>
+          <h3 class="fotnav">Become A Seller</h3>
+          <h3 class="fotnav">Terms & Conditions</h3>
+      </div>
+      <h3 style="text-align: center; color: white; margin-top: 40px;">
+        © 2019 – 2021 UBORIC. All Rights Reserved.
+      </h3>
+      <div id="fotlogo">
+        <i class="fab fa-facebook"></i>
+      </div>
+      <div id="fotlogo2">
+        <i class="fab fa-instagram"></i>
+    </div>
+  </div> 
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
+<script type="module">
+
+import navbar from "./components/navbar.js";
+
+
+console.log("navbar:",navbar);
+
+let containerr = document.getElementById('containerr')
+
+containerr.innerHTML=navbar();
+
+
+
+
+    // console.log("test")
+
+    let slideIndex = 0;
+
+    const showSlides = () => {
+        console.log("function is calling");
+
+        const slides = document.getElementsByClassName("myslides");
+        const dots = document.getElementsByClassName("dot")
+
+        console.log(slides);
+
+        for(let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slideIndex++;
+
+        if(slideIndex > slides.length){
+            slideIndex = 1;
+        }
+
+        for(let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active","");
+        }
+
+
+        slides[slideIndex - 1].style.display = "block";
+
+        dots[slideIndex - 1].className += " active";
+
+        setTimeout(showSlides, 3000);
+
+
+    };
+    showSlides();
+
+
+
+
+
+
+</script>

@@ -1,0 +1,156 @@
+#footer{
+    width: 100%;
+    margin-left: 5px;
+    height: 700px;
+    /* border: black solid 1px; */
+    /* vertical-align: top; */
+    /* background-image: url("https://v1.nitrocdn.com/aUyhaTMTaXVfRwsVoyqMOLZSqxNvcIZc/assets/static/optimized/rev-2e1e6d9/wp-content/uploads/2020/12/Testimonial-5.jpg") */
+
+    background-image: url("https://v1.nitrocdn.com/aUyhaTMTaXVfRwsVoyqMOLZSqxNvcIZc/assets/static/optimized/rev-fda5feb/wp-content/uploads/2020/12/Testimonial-5.jpg");
+background-position: 50% 50%;
+background-position-x: 50%;
+background-position-y: 50%;
+background-repeat: no-repeat;
+background-size: cover;
+box-sizing: border-box;
+background-color: orange;
+margin-top: 20px; 
+}
+.foot{
+   color: #fff;
+font-size: 36px;
+font-weight: 500;
+letter-spacing: -1px;
+
+box-sizing: border-box;
+clear: both;
+color: #ffffff;
+font-family: Lato, sans-serif;
+font-size: 39px;
+font-weight: 300;
+hyphens: manual;
+letter-spacing: -1px;
+line-height: 36px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 40px;
+overflow-wrap: break-word;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 0px;
+text-align: center
+}
+.foot2{
+   width: 30%;
+   height: 60%;
+   /* border: 1px solid green; */
+   display: inline-flex;
+   margin-left: 30px;
+   margin-top: 60px;
+   vertical-align: top;
+   text-align: center;
+   font-size: 25px;
+   line-height: 30px;
+   font-weight: 300;
+   color: white;
+}
+#btnfoot{
+   width: 200px;
+   height: 40px;
+   margin-left: 42%;
+   margin-top: 70px;
+   background-color: rgb(255, 206, 97);
+   font-size: 20px;
+   font-weight: 400;
+   border-radius: 4px;
+
+}
+#btnfoot:hover{
+   background-color: wheat;
+}
+#finalfoot{
+   width: 100%;
+   margin-left: 5px;
+   height: 400px;
+   /* border: 1px solid teal; */
+   vertical-align: top;
+   background-color: rgb(31, 29, 29);
+}
+#gogleplay{
+   width: 220px;
+   height: 85px;
+   /* border: 1px solid white; */
+   vertical-align: top;
+   display: inline-block;
+   margin-left: 39%;
+   margin-top: 30px;
+   border-radius: 5px;
+
+}
+#footnav{
+   width: 80%;
+   height: 50px;
+   /* border: white solid 1px; */
+   vertical-align: top;
+   display: inline-block;
+   margin-top: 20px;
+   margin-left: 10%;
+}
+.fotnav{
+   display: inline-flex;
+   color: white;
+   font-weight: 400;
+   margin-left: 20px;
+}
+.fotnav:hover{
+   color: orange;
+}
+#fotlogo{
+   width: 50px;
+   height: 45px;
+   margin-left:43% ;
+   margin-top: 20px;
+   vertical-align: top;
+   display: inline-block;
+   /* border: white solid 1px; */
+   background-color: rgb(248, 205, 124);
+   color: black;
+   border-radius: 50%;
+
+}
+#fotlogo:hover{
+   background-color: wheat;
+}
+#fotlogo2{
+   width: 50px;
+   height: 45px;
+   margin-left:15px ;
+   margin-top: 20px;
+   vertical-align: top;
+   display: inline-block;
+   /* border: white solid 1px; */
+   background-color: rgb(248, 205, 124);
+   color: black;
+   border-radius: 50%;
+
+}
+#fotlogo2:hover{
+   background-color: wheat;
+}
+#fotlogo > i{
+   width: 10px;
+   height: 10px;
+   color: black;
+   margin-left: 17px;
+   margin-top: 15px;
+}
+
+#fotlogo2 > i{
+   width: 10px;
+   height: 10px;
+   color: black;
+   margin-left: 17px;
+   margin-top: 15px;
+}

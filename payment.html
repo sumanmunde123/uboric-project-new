@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <!-- <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <!-- <script src='https://kit.fontawesome.com/bdfe5144d7.js' crossorigin='anonymous'></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+       <link rel="stylesheet" href="./styles/index.css">  
+     <link rel="stylesheet" href="./styles/footer.css">  
+    <style>
+  
+   .box{
+    background-color: whitesmoke;
+    display: inline-block;
+    height: 500px;
+    width: 48%;
+    margin: auto;
+    vertical-align: top;
+}
+.box1{
+    height: 100px;
+    margin-left: 10%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 8px;
+}
+.cod{
+    height: 80%;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    width: 100%;
+    background-color: #acb5cc;
+}
+hr{
+    margin: 0;
+    padding: 0;
+}
+.prod{
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 7%;
+    margin-left: 8%;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    
+}
+img{
+    height:120px ;
+}
+span{
+    color: gray;
+}
+#supplier{
+    color: rgb(218, 10, 10);
+    padding-left: 20px;
+}
+.box2{
+    background-color: white;
+    height: 550px;
+    padding-left:30px ;
+    width: 300px;
+    margin-left: 50px;
+}
+p{
+    color: grey;
+}
+.leftA{
+    padding-left: 50px;
+    text-align: left;
+    color: #b57e66;
+}
+.ls{
+    padding-left: 74px;
+}
+.ld{
+    padding-left: 10px;
+}
+.lm{
+    padding-left: 26px;
+}
+button{
+    background-color: rgb(0, 49, 0);
+    border: none;
+    height: 40px;
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius:5px ;
+    color: white;
+}
+
+/* check bar start */
+.fa-check{
+    color:white;
+    background-color:rgb(19, 35, 180);
+    border-radius: 20px;
+    width:99%;
+    height:99%;
+    font-size:20px;
+    
+  }
+  .fa-times{
+    color:black;
+    border-radius: 20px;
+    width:20px;
+    height:20px;
+    font-size:20px;
+    
+  }
+  .p{
+    display:flex;
+    margin-left: 33%;
+    margin-top: 100px;
+  }
+  .c1{
+    
+    border:green;
+    height:20px;
+    width:20px;
+    text-align: center;
+    border-radius:50px;
+  }
+  .c{
+    
+    border:1px solid rgb(233, 8, 8);
+    height:20px;
+    width:20px;
+    border-radius:50px;
+  }
+  .l{
+    margin-top:11px;
+    background-color:rgb(22,3,126);
+    border:1px solid rgb(22, 3, 126);
+    height:0px;
+    width:150px;
+  }
+  .l1{
+    margin-top:11px;
+    background-color:rgb(206, 9, 9);
+    border:1px solid rgb(238, 7, 7);
+    height:0px;
+    width:150px;
+  }
+  .p8{
+    display:flex;
+    margin-left: 32%;
+    margin-top: 5px;
+  }
+ 
+
+  .l8{
+    margin-top:11px;
+    background-color:white;
+    border:1px solid white;
+    height:0px;
+    width:150px;
+  }
+  .c8{
+    
+    border:1px solid white;
+    height:20px;
+    width:20px;
+    border-radius:50px;
+  }
+  #btn3{
+      margin-left: 25%;
+      transform: translateY(-61px);
+  }
+  #aa{
+      width: 60%;
+      margin-top: 5%;
+      height: 400px;
+      margin-left: 10%;
+      background-color: #ccd2df;
+      font-size: large;
+      
+  }      
+  .cardNumber{
+      height: 40px;
+      width: 200px;
+      font-size: 16px;
+  }
+  #box123{
+     
+      width: 150%;
+      height: 550px;
+      text-align: center;
+      margin-left: 400%;
+      transform: translateY(-600px);
+  }
+  .cart{
+      font-size: 26px;
+  }
+  
+    </style>
+</head>
+<body>
+    <div id="containerr"></div>
+    <!-- check bar star-->
+    <div class = "p">
+        <div class = "c1">
+          <i class="fa fa-check"></i>
+        </div>
+        <div class = "l">
+        </div>
+        <div class = "c2">
+            <i class="fa fa-times"></i>
+        </div>
+        <div class = "l1">
+        </div>
+        <div class = "c">
+        </div>
+      </div>
+
+      <div class = "p8">
+        <div class = "c8">
+          <P>Address</P>
+        </div>
+        <div class = "l8">
+        </div>
+        <div class = "c8">
+           <p>Payment</p>
+        </div>
+        <div class = "l8">
+        </div>
+        <div class = "c8">
+            <p>Order Placed</p>
+        </div>
+      </div>
+      
+<!-- check bar end -->
+    <div class="container">
+        <h1 style="margin-left: 10%; padding-top: 40px;">Payment Method</h1>
+        <div class="box box1">
+            <div class="cod">
+                <i class="fas fa-truck"> Cash on delivery</i>
+                <input checked type="radio" >
+            </div>
+            <!-- <div class="cod">
+                <i class="fas fa-mobile">Online</i>
+                <input type="radio">
+            </div> -->
+        </div>
+
+<div id="aa">
+
+
+    <div class = "card" >
+        <lable >Card Number</lable>
+        <input class = "cardNumber"  type = "number" placeholder="Enter your card Number"/>
+        <lable>Card Expiry Date</lable>
+        <input class="cardNumber" type = "text" placeholder="MM/YY"/>
+        <lable>CVV</lable>
+        <input class="cardNumber" type = "password" placeholder = "Enter your cvv"/>
+        <button class="cardNumber"id="btn1" class = "pay" onclick="pay()">Pay</button>
+        </div>
+        
+        
+        
+        <div class = "radio" name ="radio1" onclick="select()">
+            <input type = "radio" name ="radio1"/>
+            <h5>Credit Card</h5>
+        
+        </div>
+        
+        <div class = "card" >
+            <lable >Card Number</lable>
+            <input  class = "cardNumber" type = "number" placeholder="Enter your card Number"/>
+            <lable>Card Expiry Date</lable>
+            <input class="cardNumber" type = "text" placeholder="MM/YY"/>
+            <lable>CVV</lable>
+            <input class="cardNumber" type = "password" placeholder = "Enter your cvv"/>
+            <button class="cardNumber" id="btn2" class = "pay" onclick="pay()">Pay</button>
+            </div>
+            
+            <div class = "radio">
+                <input type = "radio"  name = "radio1"/>
+                <h5> UPI   <input class="cardNumber" type = "text" placeholder="yourUPIhandle@bankname"></h5>
+                <button class="cardNumber" id="btn3"  class = "pay" onclick="pay()">Pay</button>
+            </div>
+    
+         <img style="width: 500px;margin-left: 100%; margin-top: -10px;" src = "https://staticpg.paytm.in/pgp/web/assets/footer-new-logos.png"/>
+        </div>
+        </div>
+
+
+</div>
+<div class="box box2">
+            <div id="box123">
+                <h1>Price Details</h1>
+                <p>
+                    Product Charge <span>₹</span> <span class="product_price leftA" id="t_price">180</span>
+                </p>
+                <p>
+                    Delivery Charge <span class="leftA">₹80</span>
+                </p>
+                <p>
+                    COD Charge <span class="leftA ls">+₹0</span>
+                </p>
+            
+                <hr>
+                <h2>
+                    Order Total <span>₹</span> <span id="total_price" class="leftA ld">206</span>
+                </h2>
+                <p style="font-size:13px;">Clicking on ‘Continue’ will not deduct any money</p>
+               <a href="summery.html"><button>Continue</button></a>
+               <div>
+                    <h2>WE ACCEPT</h2>
+            <img  width="90%"
+            src="https://tse3.mm.bing.net/th?id=OIP.LO4tQZiJh9PK4YUJxEw-nQHaBn&pid=Api&P=0&w=502&h=109">
+    
+
+            </div>
+           
+        
+           </div>
+  
+        </div>
+    </div>
+
+
+    
+
+    
+   
+    
+    
+
+   
+</body>
+</html>
+<script type="module">
+    import navbar from "./components/navbar.js"
+    let containerr =document.getElementById("containerr")
+    containerr.innerHTML = navbar();
+</script>
+<script>
+
+   data = JSON.parse(localStorage.getItem("cartItem"));
+var left_price = document.querySelector("#t_price");
+left_price.textContent=data.price;
+
+var total = (80+(+data.price))-100;
+var t_price = document.querySelector("#total_price");
+t_price.textContent=total;
+</script>

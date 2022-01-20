@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<style>
+    #main{
+        display: flex;
+    }
+    #main div{
+        flex: 1;
+    }
+    form{
+        width: 20%;
+    }
+
+    #account{
+        /* border: 1px  solid black; */
+        width: 100%;
+        height: 120px;
+        vertical-align: top;
+        display: inline-block;
+        margin-top: 15px;
+        text-align: center;
+        color: rgb(30, 81, 108);
+        
+        
+    }
+    #google{
+        width: 250px;
+        height: 50px;
+        /* border:  1px solid black; */
+        display: inline-block;
+        margin-top: 0px;
+        vertical-align: top;
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+    
+    
+    input{
+        width: 400px;
+        height: 40px;
+        margin-top: 20px;
+        margin-left: 15%;
+    }
+    input::placeholder{
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
+<body>
+ <div id="containerr"></div>
+
+    <div id="account">
+        <h1>My Account</h1>
+        <h3>Home  >  My account</h3>
+    </div>
+    <div id="main">
+            <div>
+                <form  onsubmit="Register(event)">
+                    <h1 style="text-align: center;">Register</h1>
+                    <input id="name" type="text">
+                    <input type="email" id="email">
+                    <input type="text" id="username">
+                    <input type="password" id="password">
+    
+                    <input type="number" id="mobile">
+    
+                    <input type="text" id="description">
+    
+                    <input style="width: 80px; background-color: orange; color: black; font-weight: bold; " type="submit" >
+                </form>
+            </div>
+        
+        <div>
+            <form  onsubmit="login(event)">
+                <h1 style="text-align: center;">Log In</h1>
+                
+               
+                <input type="text" id="username_login">
+                <input type="password" id="password_login">
+               
+                <input style="width: 100px; background-color: orange; color: black; font-weight: bold; " type="submit">
+                
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <div id="footer">
+        <h2 class="foot">What Our Customer Says</h2>
+        <div class="foot2">
+            <p>
+              Auspesious range of foot wares.Premium branded products. <br>Good survival delevery duration.Super high value of customers.  <br><br><br><br>
+              Tushar Pandey<br><br>--Customers
+            </p>
+         
+        </div>
+        <div class="foot2">
+            <p>I think one of the best app for shoes shopping. I am totally happy with it Thank you so much uboric. <br><br><br><br><br>harpal patel<br><br>--Customers</p>
+            
+        </div>
+        <div class="foot2">
+            <p>Very bif range of products  and the services  are very fast. i am ordered the footwear and they deleveres very quick.<br><br><br><br>Ishan Shah<br><br>--Customers</p>
+            
+        </div>
+    
+        <button id="btnfoot">Add Your Reviews</button>
+      </div>
+    
+    
+    
+      <div id="finalfoot">
+          <div id="gogleplay">
+              <img style="width: 100%; height: 95%;" src="https://www.uboric.com/wp-content/uploads/2020/08/google-play1.png">
+          </div>
+          <div id="footnav">
+              <h3 class="fotnav">About Us</h3>
+              <h3 class="fotnav">Contact</h3>
+              <h3 class="fotnav">Shipping & Returns</h3>
+              <h3 class="fotnav">My Account</h3>
+              <h3 class="fotnav">Privacy Policy</h3>
+              <h3 class="fotnav">Become A Seller</h3>
+              <h3 class="fotnav">Terms & Conditions</h3>
+          </div>
+          <h3 style="text-align: center; color: white; margin-top: 40px;">
+            © 2019 – 2021 UBORIC. All Rights Reserved.
+          </h3>
+          <div id="fotlogo">
+            <i class="fab fa-facebook"></i>
+          </div>
+          <div id="fotlogo2">
+            <i class="fab fa-instagram"></i>
+        </div>
+      </div> 
+    
+    
+    
+</body>
+</html>
+<script type="module">
+    import navbar from "./components/navbar.js"
+    let containerr =document.getElementById("containerr")
+    containerr.innerHTML = navbar();
+</script>
+<script >
+    
+
+
+
+
+//     api_link = https://masai-api-mocker.herokuapp.com/
+//    register url = https://masai-api-mocker.herokuapp.com/auth/register
+//    login url = https://masai-api-mocker.herokuapp.com/login
+
+
+
+
+async function Register(e){
+    try{
+
+        e.preventDefault();
+    
+
+    var register_data = {
+
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        password: document.getElementById("password").value,
+        mobile: document.getElementById("mobile").value,
+        username: document.getElementById("username").value,
+        description: document.getElementById("description").value,
+    };
+
+    register_data = JSON.stringify(register_data);
+    console.log("register_data:",register_data);
+
+
+    } catch(error){
+        console.log("error:",error);
+    }
+
+    let reg_api = `https://masai-api-mocker.herokuapp.com/auth/register`;
+
+
+    let response = await fetch(reg_api, {
+
+        method:'POST',
+
+        body:register_data,
+
+
+        headers:{
+            "Content-Type":"application/json",
+        },
+    });
+
+    let data = await response.json();
+    console.log("data:",data);
+
+
+    if(data.error===true){
+        alert("user already exist");
+    } else {
+        alert("registration successful");
+    }
+
+   
+}
+
+
+
+async function login(e){
+    e.preventDefault();
+
+    let login_data = {
+
+        username: document.getElementById("username_login").value,
+        password: document.getElementById("password_login").value,
+    };
+
+    login_data = JSON.stringify(login_data)
+    let login_url =`https://masai-api-mocker.herokuapp.com/auth/login
+`
+
+    let response = await fetch(login_url, {
+
+        method:'POST',
+
+        body: login_data,
+
+        headers:{
+            "Content-Type":"application/json",
+        },
+    });
+
+    let data = await response.json();
+    console.log("data:",data);
+
+    let username = document.getElementById("username_login").value;
+
+    getUser(username, data.token);
+}
+
+
+async function getUser(username, token){
+    let api = `https://masai-api-mocker.herokuapp.com/user/${username}`;
+
+    let response = await fetch(api, {
+
+        headers: {
+
+            "Content-Type" : "application/json",
+            Authorization: `Bearer ${token}`,
+
+        },
+
+       
+    });
+
+    let data = await response.json();
+    console.log("data:", data);
+
+    if(data.error===true){
+        alert("Invalid Username or Password");
+    } else {
+        alert("Login Successfull");
+        window.location.href="./index.html"
+    }
+}
+
+</script>

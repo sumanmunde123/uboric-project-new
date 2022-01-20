@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src='https://kit.fontawesome.com/bdfe5144d7.js' crossorigin='anonymous'></script> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <title>Address Page</title>
+    <style>
+        body{
+            background-color: rgb(243, 233, 213);
+        }
+        .container{
+            height: 800px;
+        }
+        .box{
+            background-color: rgb(231, 226, 226);
+            display: inline-block;
+            height: 300px;
+            width: 48%;
+            margin: auto;
+            vertical-align: top;
+           margin-top: -24%;
+            transform: translateX(800px);
+        }
+        .box1{
+            height: 270px;
+            margin-left: 10%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border-radius: 8px;
+        }
+        hr{
+            margin: 0;
+            padding: 0;
+        }
+        .prod{
+            vertical-align: top;
+            display: inline-block;
+            margin-top: 7%;
+            margin-left: 8%;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 30px;
+            
+        }
+        img{
+            height:120px ;
+        }
+        span{
+            color: gray;
+        }
+        #supplier{
+            color: gray;
+            padding-left: 20px;
+        }
+        .box2{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            padding-left:30px ;
+            width: 300px;
+            margin-left: 50px;
+        }
+        p{
+            color: grey;
+        }
+        .leftA{
+            padding-left: 50px;
+            text-align: left;
+            color: #b57e66;
+        }
+        .ls{
+            padding-left: 74px;
+        }
+        .ld{
+            padding-left: 10px;
+        }
+        .lm{
+            padding-left: 26px;
+        }
+        button{
+            
+            background-color: rgb(6, 78, 6);
+            border: none;
+            height: 40px;
+            width: 60%;
+            margin: auto;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius:5px ;
+            color: white;
+            margin-left: 20%;
+        }
+        #sp{
+            color: #b57e66;
+        }
+        .f_address{
+            padding-left: 8%;
+            font-size: 17px;
+        }
+        #del_button{
+            margin-left: 5%;
+        }
+        #add2{
+            background-color:whitesmoke; margin-top: 50px; margin-bottom: 30px; border-radius: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            padding-bottom: 20px;
+        }
+
+        /* check bar start */
+        .fa-check{
+            color:black;
+            background-color: green;
+            border-radius: 20px;
+            width:99%;
+            height:99%;
+            font-size:20px;
+            
+          }
+          .fa-times{
+            color:white;
+            background-color: green;
+            border-radius: 20px;
+            width:20px;
+            height:20px;
+            font-size:20px;
+            
+          }
+          .p{
+            display:flex;
+            margin-left: 33%;
+            margin-top: 100px;
+          }
+          .c1{
+            
+            border:1px solid green;
+            height:20px;
+            width:20px;
+            text-align: center;
+            border-radius:50px;
+          }
+          .c2{
+            
+            border:1px solid grey;
+            height:20px;
+            width:20px;
+            text-align: center;
+            border-radius:50px;
+          }
+          .c{
+            
+            border:1px solid grey;
+            height:20px;
+            width:20px;
+            border-radius:50px;
+          }
+          .l{
+            margin-top:11px;
+            background-color:grey;
+            border:1px solid grey;
+            height:0px;
+            width:150px;
+          }
+          .l1{
+            margin-top:11px;
+            background-color:grey;
+            border:1px solid grey;
+            height:0px;
+            width:150px;
+          }
+
+          .p8{
+            display:flex;
+            margin-left: 32%;
+            margin-top: 5px;
+          }
+          
+          .l8{
+            margin-top:11px;
+            background-color:white;
+            border:1px solid white;
+            height:0px;
+            width:150px;
+          }
+          .c8{
+            
+            border:1px solid white;
+            height:20px;
+            width:20px;
+            border-radius:50px;
+          }
+          #carts{
+              margin-top: 10px;
+              color: teal;
+              font-style: italic;
+              font-weight: bold;
+          }
+          input{
+              width: 400px;
+              height: 40px;
+          }
+          
+    </style>
+</head>
+<body>
+    <div id="containerr"></div>
+
+
+
+    
+
+    <!-- check bar star-->
+    <div class = "p">
+        <div class = "c1">
+          <i class="fa fa-times"></i>
+        </div>
+        <div class = "l">
+        </div>
+        <div class = "c2">
+            <!-- <i class="fa fa-times"></i> -->
+        </div>
+        <div class = "l1">
+        </div>
+        <div class = "c">
+        </div>
+      </div>
+      
+      <div class = "p8">
+        <div class = "c8">
+          <P>Address</P>
+        </div>
+        <div class = "l8">
+        </div>
+        <div class = "c8">
+           <p>Payment</p>
+        </div>
+        <div class = "l8">
+        </div>
+        <div class = "c8">
+            <p>Order Placed</p>
+        </div>
+      </div>
+<!-- check bar end -->
+
+<div id="carts">
+    <h1 style="margin-left: 20%;">
+        Cart Item's
+    </h1>
+    <h2></h2>
+    <h1 id="play"></h1>
+
+    <!-- <button id="cheackuot">.
+        <a style="color: white;" href="payment.html">Cheackout</a>
+        </button> -->
+
+        <section>
+            <div id="product">
+
+            </div>
+            <div id="adrece" style="margin-left: 5%; background-color: rgb(247, 242, 240); margin-left:20%; width: 1100px;">
+                <div style="background-color: gray; height: 40px; width: 50%;">               
+                     <h1> Delivery Address</h1>
+                </div>
+
+                <label for="">ZIPCODE</label><br>
+                <input type="text" placeholder="Zipcode"><br><br>
+                <label for="">FULL NAME</label><br>
+                <input type="text" placeholder="Full Nmae"><br><br>
+                <label for="">ADDRESS</label><br>
+                <input type="text" placeholder="Address"><br><br>
+                <label for="">AREA</label><br>
+                <input type="text" placeholder="Area"><br><br>
+                <label for="">CITY</label><br>
+                <input type="text" placeholder="City"><br><br>
+                <label for="">STATE</label><br>
+                <input type="text" placeholder="State"><br><br>
+
+               
+            </div>
+        </section>
+    
+</div>
+    <footer>
+        <div class="last-container">
+            <div class="last-subcontainer">
+                <div style="height: 120px;width: 100%; text-align: center; border-bottom:1px solid lightgray;">
+                    <h3 class="footer-h">PAYMENT METHOD</h3>
+                    <div style="width: 60%;margin: auto;">
+                        <img style="width: 100%;" src="https://mednear.com/assets/web/images/others/payments.png?0.2" />
+                    </div>
+         
+          <a href="payment.html"><button id="del_button">Deliver to this address</button></a>
+
+
+        </div>
+    
+    </div>
+
+
+    
+ 
+    
+    
+    
+
+           
+</body>
+</html>
+<script type="module">
+    import navbar from "./components/navbar.js"
+    let containerr =document.getElementById("containerr")
+    containerr.innerHTML = navbar();
+</script>
+<script>
+   
+   data = JSON.parse(localStorage.getItem("cartItem"));
+//console.log(data)
+// var pro_img1 = document.querySelector("#pro_img");
+// pro_img1.setAttribute("src",data.image_url)
+// console.log(data.price,data.image_url,data.product_n)
+
+// var pro_name = document.querySelector("#prod_name");
+// pro_name.textContent=data.product_n;
+// console.log(pro_name)
+
+// var pro_price = document.querySelector("#product_price");
+// pro_price.textContent=data.price;
+
+var left_price = document.querySelector("#t_price");
+left_price.textContent=data.price;
+
+var total = (80+(+data.price))-100;
+var t_price = document.querySelector("#total_price");
+t_price.textContent=total;
+
+// var address_btn = document.querySelector("button");
+// address_btn.addEventListener("click",nextAdd)}
+
+
+</script>

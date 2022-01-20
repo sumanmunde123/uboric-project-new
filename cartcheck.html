@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/bdfe5144d7.js' crossorigin='anonymous'></script>
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="cartcheck.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+       <link rel="stylesheet" href="./styles/index.css">  
+     <link rel="stylesheet" href="./styles/footer.css">  
+
+        <style>
+           body{
+              background-color: rgb(209, 140, 151);
+           }
+.box{
+   background-color: whitesmoke;
+   display: inline-block;
+   height: 500px;
+   width: 48%;
+   margin: auto;
+   vertical-align: top;
+}
+.box1{
+   height: 270px;
+   margin-left: 10%;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+   border-radius: 8px;
+}
+hr{
+   margin: 0;
+   padding: 0;
+}
+.prod{
+   vertical-align: top;
+   display: inline-block;
+   margin-top: 7%;
+   margin-left: 8%;
+   font-size: 20px;
+   font-weight: bold;
+   line-height: 30px;
+   color: black;
+}
+img{
+   height:120px ;
+   width: 120px;
+}
+span{
+   color: gray;
+}
+#supplier{
+   color: gray;
+   padding-left: 20px;
+}
+.box2{
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+   padding-left:30px ;
+   width: 300px;
+   margin-left: 50px;
+}
+p{
+   color: grey;
+}
+.leftA{
+   padding-left: 45px;
+   text-align: left;
+   color: #b57e66; ;
+}
+.ls{
+   padding-left: 74px;
+}
+.ld{
+   padding-left: 10px;
+}
+.lm{
+   padding-left: 26px;
+}
+button{
+   background-color: #116406;
+   border: none;
+   height: 40px;
+   width: 90%;
+   margin: auto;
+   font-size: 20px;
+   font-weight: bold;
+   border-radius:5px ;
+   color: white;
+}
+#sp{
+   color: red;
+}
+#t_price{
+   padding-left: 50px;
+}
+
+
+#nav{
+      background-color: rgb(10, 6, 6);
+      width: 100%;
+      height: 70px;
+      margin-bottom: 100px;
+      display: flex;
+  }
+  .butt{
+      width: 10%;
+      height:95%;
+      color: white;
+      font-size: 20px;
+      background-color: black;
+      margin-left: 1%;
+      
+  }      
+  #search_nav{
+      width: 500%;
+      height: 80%;
+      border-radius: 20px;
+      text-align: center;
+     font-size: 29px;
+
+     
+  }
+  #nav_sele{
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      color: white  ;
+      font-size: 26px;
+      margin-left: 20%;
+      border: 2px solid black;
+      
+  }
+  .butt1{
+      background-color: rgb(7, 4, 4);
+      margin-left: 100px;
+      height: 50%;
+      border: 2px solid black;
+  }
+  #search_img{
+          width: 15%;
+          height: 80%;
+          margin-top: 5px;
+          border-radius: 100%;
+          margin-left: -94px;
+       
+      }
+      .container{
+         color: black;
+         font-weight: bold;
+      }
+        </style>
+
+</head>
+<body>
+    
+
+     <div id="containerr"></div> 
+
+
+    <div class="container">
+        <h1 style="margin-left: 10%; padding-top: 40px;">Cart:</h1>
+        <div class="box box1">
+            <img class="prod" id="pro_img" src="https:via.placeholder.com/80x100" alt="">
+            <p class="prod" > <span id="prod_name">Product_name</span> 
+               <br><span>size:</span> <span id="product_size">6</span> <br>
+              <span>Qty: </span><span id="product_qty">1</span> <br> 
+              <span>₹ </span><span class="product_price" id="product_price">180</span>
+            </p>
+         <hr>
+        </div>
+        <div class="box box2">
+            <h1>Price Details</h1>
+            <p>
+                Product Charge <span>₹</span> <span class="product_price leftA" id="t_price">180</span>
+            </p>
+            <p>
+                Delivery Charge <span class="leftA">+₹80</span>
+            </p>
+            <p>
+                COD Charge <span class="leftA ls">+₹0</span>
+            </p>
+            <p>
+               1st Order Discount <span class="leftA lm">₹ 100</span>
+           </p>
+            <hr>
+            <h2>
+                Order Total <span>₹</span> <span id="total_price" class="leftA ld">206</span>
+            </h2>
+            <p style="font-size:13px;">Clicking on ‘Continue’ will not deduct any money</p>
+            <a href="address.html"><button>Continue</button></a>
+        </div>
+    </div>
+
+
+
+
+    
+    <div id="footer">
+      <h2 class="foot">What Our Customer Says</h2>
+      <div class="foot2">
+          <p>
+            Auspesious range of foot wares.Premium branded products. <br>Good survival delevery duration.Super high value of customers.  <br><br><br><br>
+            Tushar Pandey<br><br>--Customers
+          </p>
+       
+      </div>
+      <div class="foot2">
+          <p>I think one of the best app for shoes shopping. I am totally happy with it Thank you so much uboric. <br><br><br><br><br>harpal patel<br><br>--Customers</p>
+          
+      </div>
+      <div class="foot2">
+          <p>Very bif range of products  and the services  are very fast. i am ordered the footwear and they deleveres very quick.<br><br><br><br>Ishan Shah<br><br>--Customers</p>
+          
+      </div>
+  
+      <button id="btnfoot">Add Your Reviews</button>
+    </div>
+  
+  
+  
+    <div id="finalfoot">
+        <div id="gogleplay">
+            <img style="width: 100%; height: 95%;" src="https://www.uboric.com/wp-content/uploads/2020/08/google-play1.png">
+        </div>
+        <div id="footnav">
+            <h3 class="fotnav">About Us</h3>
+            <h3 class="fotnav">Contact</h3>
+            <h3 class="fotnav">Shipping & Returns</h3>
+            <h3 class="fotnav">My Account</h3>
+            <h3 class="fotnav">Privacy Policy</h3>
+            <h3 class="fotnav">Become A Seller</h3>
+            <h3 class="fotnav">Terms & Conditions</h3>
+        </div>
+        <h3 style="text-align: center; color: white; margin-top: 40px;">
+          © 2019 – 2021 UBORIC. All Rights Reserved.
+        </h3>
+        <div id="fotlogo">
+          <i class="fab fa-facebook"></i>
+        </div>
+        <div id="fotlogo2">
+          <i class="fab fa-instagram"></i>
+      </div>
+    </div> 
+</body>
+</html>
+ <script type="module">
+   import navbar from "./components/navbar.js"
+   let containerr =document.getElementById("containerr")
+   containerr.innerHTML = navbar();
+</script> 
+
+
+<script>
+   
+
+   data = JSON.parse(localStorage.getItem("cartItem"));
+//console.log(data)
+var pro_img1 = document.querySelector("#pro_img");
+pro_img1.setAttribute("src",data.image_url)
+console.log(data.price,data.image_url,data.product_n)
+
+var pro_name = document.querySelector("#prod_name");
+pro_name.textContent=data.product_n;
+
+var pro_price = document.querySelector("#product_price");
+pro_price.textContent=data.price;
+
+var left_price = document.querySelector("#t_price");
+left_price.textContent=data.price;
+
+var total = (80+(+data.price))-100;
+var t_price = document.querySelector("#total_price");
+t_price.textContent=total;
+
+    
+</script>

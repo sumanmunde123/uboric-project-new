@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footwear</title>
+    <!-- <script src='https://kit.fontawesome.com/bdfe5144d7.js' crossorigin='anonymous'></script> -->
+    <!-- <link rel="stylesheet" href="addtocart.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <style>
+        
+  /* ======================head css part start ===========*/
+
+/* =======================head css end======================= */
+
+         #startdiv{
+            padding-left: 50px;
+        }
+        #container{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: auto auto auto auto;
+            width: 98%;
+            padding-left: 15px;
+        }
+        #container>div{
+            width: 20% 20% 20% 20%;
+            border: 1px solid rgb(240, 238, 235);
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+            margin:10px;
+        }
+        button{
+            background-color: black;
+            color: rgb(250, 243, 243);
+            font-size: 26px;
+            width: 80%;
+            height: 15%;
+            transform: translateY(-20px);
+        }
+
+        .box{
+            max-width: 300px;
+            height: 500px;
+            font-size: 20px;
+        }
+        .innerbox{
+            height: 200px;
+            line-height: 10px;
+            padding-left: 20px;
+            max-width: 300px;
+            margin-bottom: 200px;
+        }
+        .box>img{
+            height: 300px;
+            width: 100%;
+        }
+        p{
+            line-height: 20px;
+        }
+        #product_name{
+            color: grey;
+            font-size: 17px;
+        }
+        #product_price{
+            font-weight: bold;
+            font-size: 25px;
+            
+        }
+        .orignal_price{
+            text-decoration:line-through;
+            font-weight: lighter;
+            font-size: 25px;
+            padding: 4%;
+            font-style: italic;
+            color: grey;
+        }
+        #percentage_off{
+            color: green;
+            font-size:25px ;
+            font-style: normal;
+        }
+        .percent{
+            color: lightgreen;
+            font-style: italic;
+            font-size: 18px;
+            
+        }
+        #dicount{
+            font-size: 17px;
+            color: grey;
+        }
+        #delivery{
+            color: grey;
+
+        }
+        .fa-tags{
+            color: green;
+        }
+
+        .sort{
+            margin-top: 15px;
+            height: 30px;
+            font-size: 20px;
+            border-radius: 5px;
+            text-align: center;
+            color:black;
+            margin-left: 50px;
+            background-color: rgb(230, 126, 126);
+        }
+       
+  
+ 
+  
+  #nav_sele{
+      width: 10%;
+      height: 90%;
+      background-color: black;
+      color: white  ;
+      font-size: 26px;
+      border: 2px solid black;
+      transform: translateY(-20px)
+  }
+ 
+    </style>
+</head>
+<body>
+    <div id="containerr"></div>
+    
+            <select id="Sort_by_price" class="sort" onchange="SearchByPrice() ">
+                <option value="">Sort By Price</option>
+                <option value="low">Sort by Low to High Price</option>
+                <option value="high">Sort by High to Low Price</option>
+            </select>
+  </div> 
+
+  <div id="prooduct"></div>
+      
+
+
+
+
+  <div id="footer">
+    <h2 class="foot">What Our Customer Says</h2>
+    <div class="foot2">
+        <p>
+          Auspesious range of foot wares.Premium branded products. <br>Good survival delevery duration.Super high value of customers.  <br><br><br><br>
+          Tushar Pandey<br><br>--Customers
+        </p>
+     
+    </div>
+    <div class="foot2">
+        <p>I think one of the best app for shoes shopping. I am totally happy with it Thank you so much uboric. <br><br><br><br><br>harpal patel<br><br>--Customers</p>
+        
+    </div>
+    <div class="foot2">
+        <p>Very bif range of products  and the services  are very fast. i am ordered the footwear and they deleveres very quick.<br><br><br><br>Ishan Shah<br><br>--Customers</p>
+        
+    </div>
+
+    <button id="btnfoot">Add Your Reviews</button>
+  </div>
+
+
+
+  <div id="finalfoot">
+      <div id="gogleplay">
+          <img style="width: 100%; height: 95%;" src="https://www.uboric.com/wp-content/uploads/2020/08/google-play1.png">
+      </div>
+      <div id="footnav">
+          <h3 class="fotnav">About Us</h3>
+          <h3 class="fotnav">Contact</h3>
+          <h3 class="fotnav">Shipping & Returns</h3>
+          <h3 class="fotnav">My Account</h3>
+          <h3 class="fotnav">Privacy Policy</h3>
+          <h3 class="fotnav">Become A Seller</h3>
+          <h3 class="fotnav">Terms & Conditions</h3>
+      </div>
+      <h3 style="text-align: center; color: white; margin-top: 40px;">
+        © 2019 – 2021 UBORIC. All Rights Reserved.
+      </h3>
+      <div id="fotlogo">
+        <i class="fab fa-facebook"></i>
+      </div>
+      <div id="fotlogo2">
+        <i class="fab fa-instagram"></i>
+    </div>
+  </div> 
+
+                
+    
+
+</body>
+</html>
+
+<script type="module">
+    import navbar from "./components/navbar.js"
+    let containerr =document.getElementById("containerr")
+    containerr.innerHTML = navbar();
+</script>
+<script>
+
+    //  import navbar from "./components/navbar.js";
+
+    //  let containerr = document.getElementById("containerr")
+    //  containerr.innerHTML=navbar();
+
+
+  var data = JSON.parse(localStorage.getItem("allproduct")) || [
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwBls8zqYYgNGIgt3c2ZeFsbYufE_gSUDQMw&usqp=CAU",
+        product_n:"Slipper",
+        price:"500",
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsjKVhoSkfgkhymzs6617ehWt0GQFxuHxs_A&usqp=CAU",
+        product_n:"Combo Slipper",
+        price:"800",
+        
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmvxur4qbbtOLFIceJAY64qSR69fpivqAMPA&usqp=CAU",
+        product_n:"Sandal",
+        price:"700",
+       
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl3TcwUo24Y-pvY_w3ZoKS95BvMYfYhoPn-g&usqp=CAU",
+        product_n:"Hill Sandal",
+        price:"400",
+        
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBy8xiSlvrBxU7uIGKSixpdJOM6Xz74PmDsQ&usqp=CAU",
+        product_n:"Sports Shoes",
+        price:"1000",
+        
+     
+    },
+
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5MK8nrsRqTmNqKINcfJu6SLxf7NHevIrVxw&usqp=CAU",
+        product_n:"Shoes",
+        price:"800",
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK2jOaVpkcxszHnbd7ETULCmux4ljJKe2_1Q&usqp=CAU",
+        product_n:"Adidas",
+        price:"450",
+        
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGDGj5bRR1-HueZMDOhqQ-EdTkFntaJ5upDQ&usqp=CAU",
+        product_n:"Training Shoes",
+        price:"560",
+        
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL8Ncw6iJ1G-81dhIraXntJUd-YdCdztSvAQ&usqp=CAU",
+        product_n:"Party Shoes",
+        price:"900",
+     
+    },
+
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC1KLoh5UVvUfXOgltEazTwNFh7IWt2R9moA&usqp=CAU",
+        product_n:"Shoes",
+        price:"800",
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-gakVxj4vHq0DKpiZOJhgzIyCbNzDVdTA6A&usqp=CAU",
+        product_n:"Sports Shoes",
+        price:"300",
+        
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIWdXLshNjXwIoArSzOeGzL5RwuXHS7-LTOg&usqp=CAU",
+      
+        product_n:"Pencil Hill",
+        price:"1880",
+        
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaYwsQoGG3DmNDwEFPVSSAvx9BkBDjQbs0rw&usqp=CAU",
+        product_n:"Slippers",
+        price:"1500",
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWuELHW2CiZPJhvfNDEnAKRR3TD4UNF09a5A&usqp=CAU",
+        product_n:"Fancy slipper",
+        price:"1200",
+        
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJk9SvvBDxGUhvqwEFviK8GkWHMbgR8fTM7Q&usqp=CAU",
+        product_n:"Mens slipper",
+        price:"600",
+        
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj7ty3P2hnJlqOv9O4YEC6CQkz2ys590KAyA&usqp=CAU",
+        product_n:"Chappal",
+        price:"140",
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlXWw1MhNjo_laEay8Q_zdzGHufASJ4ASOSg&usqp=CAU",
+        product_n:"Silk chappal",
+        price:"1533",
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnpoJu_Iy8AiW6keNc5jfbryjThWDr57QeUw&usqp=CAU",
+        product_n:"Pencil Hill",
+        price:"330",
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGjTWZi4cwWJIVvBRD8CGbDZ9N6mcjp4NfnA&usqp=CAU",
+        product_n:"Shoes",
+        price:"880",
+        
+     
+    },
+    {
+        image_url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSog1SD-MMWQbQ-G_0E30RnL4jszJUBovRGfg&usqp=CAU",
+        product_n:"Chappal",
+        price:"770",
+     
+    },
+
+
+    
+    
+
+];
+function SearchByPrice() {
+    var selected = document.getElementById("Sort_by_price").value;
+    console.log("selected: ", selected);
+    if(selected == "high") {
+        data = data.sort(function (a, b){
+            return b.price - a.price;
+        });
+    }
+    else if(selected == "low") {
+        data = data.sort(function (a, b){
+            return a.price - b.price;
+        });
+    }
+    
+    console.log(data);
+    displayItem(data);
+}
+
+var prooduct = document.getElementById("prooduct");
+var startdiv = document.createElement("div");
+startdiv.setAttribute("id", "startdiv");
+prooduct.append(startdiv);
+var h2 = document.createElement("h2");
+h2.textContent=" All Products";
+startdiv.append(h2);
+var para = document.createElement("p");
+para.textContent="Showing 1-16 out of 100";
+startdiv.append(para);
+var mainDiv = document.createElement("div");
+mainDiv.setAttribute("id", "container");
+prooduct.append(mainDiv);
+
+displayItem(data);
+function displayItem(data){
+    document.querySelector("#container").innerHTML="";
+    data.map(function(item){
+    var box = document.createElement("div");
+    box.setAttribute("class", "box");
+
+    box.addEventListener("click",function(){
+        // addToCart1(item)
+        localStorage.setItem("cartItem",JSON.stringify(item))
+        window.location.href="mains_products.html"
+        //console.log(item)
+    })
+
+    mainDiv.append(box);
+    var image = document.createElement("img");
+    image.setAttribute("src", item.image_url);
+    box.append(image);
+    var innerbox = document.createElement("div");
+   innerbox.setAttribute("class", "innerbox");
+    box.append(innerbox);
+    var product_name = document.createElement("p");
+    product_name.setAttribute("id", "product_name");
+    product_name.textContent=item.product_n;
+    innerbox.append(product_name);
+    var product_price = document.createElement("h3");
+    product_price.setAttribute("id", "product_price");
+    var Discount = Math.floor((item.price * 20) / (100));
+    product_price.textContent=(item.price - Discount);
+    //  var button=document.createElement("button")
+    //  button.textContent="Add to cart"
+    var span = document.createElement("span");
+    span.setAttribute("class", "orignal_price");
+    //var s =item.price-100;
+    // var afterdis = +(item.price) + 100;
+    span.textContent=item.price;
+    product_price.append(span)
+
+    var span2 = document.createElement("span");
+    span2.setAttribute("id", "percentage_off");
+    span2.textContent="20% off";
+    product_price.append(span2)
+
+
+
+    innerbox.append(product_price);
+    var discount = document.createElement("p");
+    discount.setAttribute("id", "discount");
+
+    var ita = document.createElement("i");
+    ita.setAttribute("class", "fa fa-tags percent");
+    discount.append(ita)
+
+    var poff = document.createElement("span");
+    poff.textContent=item.discount
+    discount.append(poff)
+
+    //discount.textContent=data[i].discount;
+    innerbox.append(discount);
+
+
+
+    var delivery = document.createElement("p");
+    delivery.setAttribute("id", "delivery");
+    delivery.textContent="Delivery ₹80";
+    innerbox.append(delivery);
+
+
+        
+    })
+}
+
+//for(var i=0; i<data.length;i++){
+    // var a = document.createElement("a");
+    // a.setAttribute("href", "cart1.html");
+    // mainDiv.append(a);
+
+
+    
+
+    // document.querySelectorAll(".box").addEventListener("click",proFun)
+//}
+// function proFun(){
+//     console.log('move to cart')
+//     window.location.href="cart1.html"
+// }
+
+
+</script>
